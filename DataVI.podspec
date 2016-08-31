@@ -9,27 +9,25 @@
 Pod::Spec.new do |s|
 
   
-  s.name         = "DataVI"
+  s.name         = 'DataVI'
 
-  s.version      = "0.0.1"
+  s.version      = '0.0.1'
   
-  s.summary      = "DataVI mobile service analysis"
+  s.summary      = 'DataVI mobile service analysis'
 
-  s.homepage     = "https://github.com/JIabao1/DataVI"
+  s.homepage     = 'https://github.com/JIabao1/DataVI'
   
   s.license      = { :type => "Copyright", :text => "Copyright © 2016 DdataVI. All Rights Reserved.\n" }
   
-  s.author    = "DataVI"
+  s.author    = 'DataVI'
   
-  s.platform     = :ios, "6.0"
+  s.platform     = :ios, '6.0'
 
-  s.source       = { :git => "https://github.com/JIabao1/DataVI.git", :tag => '0.0.1' }
+  s.source       = { :git => 'https://github.com/JIabao1/DataVI.git', :tag => '0.0.1' }
 
-  s.source_files  = "DataVI.framework/**/*.{h}"
+  s.frameworks = 'UIKit', 'Foundation','SystemConfiguration','CoreTelephony','Accelerate','CoreGraphics','QuartzCore'
 
-  s.frameworks = "UIKit", "Foundation","SystemConfiguration","CoreTelephony","Accelerate","CoreGraphics","QuartzCore"
-
-  s.libraries = "icucore"
+  s.libraries = 'icucore'
 
   s.vendored_frameworks = 'DataVI/DataVI.framework'
 
