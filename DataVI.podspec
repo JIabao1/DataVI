@@ -10,7 +10,9 @@ Pod::Spec.new do |s|
 
   
   s.name         = "DataVI"
+
   s.version      = "0.0.1"
+  
   s.summary      = "DataVI mobile service analysis"
 
   s.homepage     = "https://github.com/JIabao1/DataVI"
@@ -21,11 +23,9 @@ Pod::Spec.new do |s|
   
   s.platform     = :ios, "6.0"
 
-  s.source       = { :git => "https://github.com/JIabao1/DataVI.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/JIabao1/DataVI.git", :tag => '0.0.1' }
 
   s.source_files  = "DataVI.framework/**/*.{h}"
-
-  s.public_header_files = "DataVI.framework/Headers/*.h"
 
   s.frameworks = "UIKit", "Foundation","SystemConfiguration","CoreTelephony","Accelerate","CoreGraphics","QuartzCore"
 
