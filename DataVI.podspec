@@ -27,9 +27,13 @@ Pod::Spec.new do |s|
 
   s.public_header_files = "DataVI.framework/Headers/*.h"
 
-  s.frameworks = "UIKit", "Foundation","SystemConfiguraion","CoreTelephony","Accelerate","CoreGraphics","QuartzCore"
+  s.frameworks = "UIKit", "Foundation","SystemConfiguration","CoreTelephony","Accelerate","CoreGraphics","QuartzCore"
 
   s.libraries = "icucore"
+
+  s.vendored_frameworks = 'DataVI/DataVI.framework'
+
+  s.xcconfig = { 'OTHER_LDFLAGS' => '-all_load' }
 
   s.requires_arc = true
 
