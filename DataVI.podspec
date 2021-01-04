@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   
   s.name         = 'DataVI'
 
-  s.version      = '0.0.2'
+  s.version      = '0.0.1'
   
   s.summary      = 'DataVI mobile service analysis'
 
