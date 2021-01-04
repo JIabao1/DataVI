@@ -19,19 +19,19 @@ Pod::Spec.new do |s|
   
   s.license      = { :type => "Copyright", :text => "Copyright © 2016 DdataVI. All Rights Reserved.\n" }
   
-  s.author       = 'DataVI'
+  s.author    = 'DataVI'
   
   s.platform     = :ios, '6.0'
 
-  s.source       = { :git => 'https://github.com/JIabao1/DataVI.git', :tag => s.version }
+  s.source       = { :git => 'https://github.com/JIabao1/DataVI.git', :tag => '0.0.1' }
 
-  s.frameworks   = 'UIKit', 'Foundation','SystemConfiguration','CoreTelephony','Accelerate','CoreGraphics','QuartzCore'
+  s.frameworks = 'UIKit', 'Foundation','SystemConfiguration','CoreTelephony','Accelerate','CoreGraphics','QuartzCore'
 
-  s.libraries    = 'icucore'
+  s.libraries = 'icucore'
 
   s.vendored_frameworks = 'DataVI/DataVI.framework'
 
-  s.xcconfig     = { 'OTHER_LDFLAGS' => '-all_load' }
+  s.xcconfig = { 'OTHER_LDFLAGS' => '-all_load' }
 
   s.requires_arc = true
 
